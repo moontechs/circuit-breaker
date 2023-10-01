@@ -5,13 +5,13 @@ It is very useful if you have a long job that does a lot of HTTP requests in a l
 
 No dependencies.
 
-### Installation
+## Installation
 
 `composer require moontechs/circuit-breaker`
 
-### Usage
+## Usage
 
-#### Choose a strategy
+### Choose a strategy
 * Counter strategy - simple failures increment. When a limit is reached `isAvailable` function returns false.
   Calling the `success` function will reset the counter (will set 0).
   * `limit` - the default value is 5. Use the `setLimit(int)` method to change it.
@@ -47,7 +47,7 @@ $circuitBreaker = new CircuitBreaker(
 
 The default driver is `InMemoryDriver`. It does not share the data between processes.
 
-#### Example
+### Example
 
 An example of a real-world usage.
 
