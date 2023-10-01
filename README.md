@@ -1,6 +1,6 @@
 # Circuit breaker
 
-An in memory circuit breaker implementation with different strategies.
+An in memory (default driver) circuit breaker implementation with different strategies.
 
 No dependencies.
 
