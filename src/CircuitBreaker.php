@@ -26,7 +26,7 @@ class CircuitBreaker implements CircuitBreakerInterface
         $this->strategy->failure($circuitName);
     }
 
-    public function getDelay(string $circuitName): int
+    public function getFailuresCount(string $circuitName): int
     {
         return $this->strategy->getFailuresCount($circuitName);
     }

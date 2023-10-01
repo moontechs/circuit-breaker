@@ -10,5 +10,5 @@ interface CircuitBreakerInterface
 
     public function failure(string $circuitName): void;
 
-    public function getDelay(string $circuitName): int;
+    public function getFailuresCount(string $circuitName): int;
 }
